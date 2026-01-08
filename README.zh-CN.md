@@ -17,7 +17,7 @@
 安装 NPM 包
 
 ```bash
-yarn add vue-feature-registry
+yarn add vue3-feature-registry
 ```
 
 在你的 main.js（或等效文件）中，添加
@@ -26,7 +26,7 @@ yarn add vue-feature-registry
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createRouter, createWebHistory } from 'vue-router'
-import VueFeatureRegistry from 'vue-feature-registry'
+import VueFeatureRegistry from 'vue3-feature-registry'
 import foo from './modules/foo'
 import bar from './modules/bar'
 
@@ -252,7 +252,7 @@ export default {
 相反，考虑使用代码分割，只在需要时加载模块。你可以在每个模块内部使用[懒加载路由](https://router.vuejs.org/guide/advanced/lazy-loading.html#grouping-components-in-the-same-chunk)来实现这一点，或者你可以使用 `registerModules` 函数和 [Vite 的动态导入](https://vitejs.dev/guide/features.html#dynamic-import)加载整个模块定义
 
 ```javascript
-import { registerModules } from 'vue-feature-registry'
+import { registerModules } from 'vue3-feature-registry'
 
 const { default: foo } = await import('./modules/foo')
 registerModules({ foo })

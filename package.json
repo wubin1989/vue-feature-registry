@@ -1,7 +1,7 @@
 {
-  "name": "vue-feature-registry",
+  "name": "vue3-feature-registry",
   "version": "0.0.1",
-  "main": "dist/vue-feature-registry.umd.js",
+  "main": "dist/vue3-feature-registry.umd.js",
   "module": "lib/index.js",
   "license": "MIT",
   "scripts": {

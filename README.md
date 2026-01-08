@@ -17,7 +17,7 @@ The main purpose of this repo is simply to **prescribe a scalable project struct
 Install the NPM module
 
 ```bash
-yarn add vue-feature-registry
+yarn add vue3-feature-registry
 ```
 
 In your main.js (or equivalent), add
@@ -26,7 +26,7 @@ In your main.js (or equivalent), add
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { createRouter, createWebHistory } from 'vue-router'
-import VueFeatureRegistry from 'vue-feature-registry'
+import VueFeatureRegistry from 'vue3-feature-registry'
 import foo from './modules/foo'
 import bar from './modules/bar'
 
@@ -252,7 +252,7 @@ When your code base grows, bundling everything together in one giant chunk resul
 Instead, consider using code splitting by loading your modules only when needed. You can do this inside each module with [lazy loading routes](https://router.vuejs.org/guide/advanced/lazy-loading.html#grouping-components-in-the-same-chunk), or you can load in entire module definitions with the `registerModules` function and [Vite's dynamic imports](https://vitejs.dev/guide/features.html#dynamic-import)
 
 ```javascript
-import { registerModules } from 'vue-feature-registry'
+import { registerModules } from 'vue3-feature-registry'
 
 const { default: foo } = await import('./modules/foo')
 registerModules({ foo })

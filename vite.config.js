@@ -13,7 +13,7 @@ export default defineConfig(({ command, mode }) => {
         lib: {
           entry: resolve(__dirname, 'lib/index.js'),
           name: 'VueFeatureRegistry',
-          fileName: (format) => `vue-feature-registry.${format}.js`
+          fileName: (format) => `vue3-feature-registry.${format}.js`
         },
         rollupOptions: {
           external: ['vue', 'vue-router', 'pinia'],
