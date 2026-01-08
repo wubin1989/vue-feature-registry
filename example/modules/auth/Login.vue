@@ -12,8 +12,14 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import useAuthStore from './store'
 
-const authStore = useAuthStore()
+export default {
+  name: 'Login',
+  setup() {
+    const authStore = useAuthStore()
+    return { authStore }
+  }
+}
 </script>

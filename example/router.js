@@ -1,8 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import Vue from 'vue'
+import Router from 'vue-router'
 import Home from './Home.vue'
 
-export default createRouter({
-  history: createWebHistory(),
+Vue.use(Router)
+
+export default new Router({
+  mode: 'history',
+  base: import.meta.env.BASE_URL || '/',
   routes: [
     {
       path: '/',
