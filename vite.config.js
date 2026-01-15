@@ -18,6 +18,7 @@ export default defineConfig(({ command, mode }) => {
         rollupOptions: {
           external: ['vue', 'vue-router', 'pinia'],
           output: {
+            exports: 'named',
             globals: {
               vue: 'Vue',
               'vue-router': 'VueRouter',

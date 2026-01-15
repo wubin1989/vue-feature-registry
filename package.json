@@ -1,8 +1,27 @@
 {
   "name": "vue-feature-registry",
   "version": "0.0.1",
+  "description": "A Vue plugin to help implement folder-by-feature module structure in large Vue projects",
+  "keywords": [
+    "vue",
+    "vue2",
+    "vue-router",
+    "pinia",
+    "module",
+    "feature",
+    "registry",
+    "plugin"
+  ],
+  "author": "wubin",
   "main": "dist/vue-feature-registry.umd.js",
   "module": "lib/index.js",
+  "files": [
+    "lib",
+    "dist",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
   "license": "MIT",
   "scripts": {
     "serve": "vite",
